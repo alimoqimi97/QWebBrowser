@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>998</width>
+    <height>641</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: white;</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>10</y>
+      <width>801</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="0" colspan="4">
+      <widget class="QWebView" name="webView">
+       <property name="styleSheet">
+        <string notr="true">border-style: double;
+border-width: 4px;
+border-color: red;
+border-radius: 5px;
+</string>
+       </property>
+       <property name="url">
+        <url>
+         <string>about:blank</string>
+        </url>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="styleSheet">
+        <string notr="true">color: white;
+background-color: lightgreen;
+font-weight: 900;
+font-size: 15px;
+border-style: double;
+border-width: 3px;
+border-radius: 10px;
+padding-top: 2px;
+padding-bottom: 2px;
+
+</string>
+       </property>
+       <property name="text">
+        <string>&lt;------</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="styleSheet">
+        <string notr="true">font-size: 15px;
+color: white;
+font-family: sans-serif;
+font-weight: 900;
+background-color: rgb(0, 184, 184);
+padding: 3px;
+border-style: double;
+border-width: 3px;
+border-radius: 10px;
+display: block;</string>
+       </property>
+       <property name="text">
+        <string>Refresh</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="pushButton">
+       <property name="styleSheet">
+        <string notr="true">color: white;
+font-weight: 900;
+font-size: 15px;
+background-color: lightgreen;
+border-style: double;
+border-width: 3px;
+border-radius: 10px;
+padding-top: 2px;
+padding-bottom: 2px;</string>
+       </property>
+       <property name="text">
+        <string>------&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="styleSheet">
+        <string notr="true">color: white;
+font-size: 15px;
+padding: 3px;
+font-family: sans-serif;
+font-weight: 900;
+font-family: Arial;
+background-color: blueviolet;
+border-style: double;
+border-width: 3px;
+border-radius: 10px;
+display: block;</string>
+       </property>
+       <property name="text">
+        <string>Go</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" colspan="3">
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-style: solid;
+border-color: black;
+border-width: 3px;
+border-radius: 10px;
+padding-left: 4px;</string>
+       </property>
+       <property name="text">
+        <string>https://</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">font-size: 15px;
+font-family: serif;
+font-family: Arial;
+font-weight: 3px;
+color: rgb(78, 116, 255);
+font-weight: 900;
+padding-left: 70px;
+font: 63 11pt &quot;Yu Gothic UI Semibold&quot;;
+background-color: white;
+border-radius: 10px;
+border-style: solid;
+border-width: 2px;
+
+</string>
+       </property>
+       <property name="text">
+        <string>Address:</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+    <zorder>webView</zorder>
+    <zorder>pushButton_3</zorder>
+    <zorder>pushButton</zorder>
+    <zorder>pushButton_4</zorder>
+    <zorder>lineEdit</zorder>
+    <zorder>label</zorder>
+    <zorder>pushButton_2</zorder>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>10</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white;
+font-weight: 900;
+padding: 5px;
+border-style: double;
+border-color: white;
+border-width:  3px;
+border-radius: 10px;
+font-size: 15px;
+background-color: rgb(225, 0, 0);
+font-family: sans-serif;
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>close</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>998</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKitWidgets/QWebView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
